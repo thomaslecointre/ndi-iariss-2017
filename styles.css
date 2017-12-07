@@ -9,3 +9,27 @@ body {
 #constat {
     background-color: #5C6BC0;
 }
+#pedagogie {
+    margin:auto;
+    text-align:center;
+}
+#pedagogie_image {
+    
+}
+#pedagogie_question {
+    
+}
+#pedagogie_reponses {
+    
+}
+#pedagogie_reponse_gauche {
+    float:left;
+    margin-left:350px;
+}
+#pedagogie_reponse_droite {
+    float:right;
+    margin-right:350px;
+}
+#pedagogie_reponse1:hover, #pedagogie_reponse2:hover, #pedagogie_reponse3:hover, #pedagogie_reponse4:hover {
+    color:#204D9B;
+}
