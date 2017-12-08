@@ -6,24 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jquery-3.2.1.slim.min.js"></script>
+    <script src="index.js"></script>
     <title>ndi-iariss-2017</title>
 </head>
 
 <body>
+    <div id="titre">
+        <h1>
+            Nuit de l'Info 2017
+        </h1>
+    </div>
     <div id="resume">
-        <textarea placeholder="Décrivez votre accident en quelques lignes..." rows="4" cols="50">
+        <h2>résumé de l'incident</h2>
+        <textarea rows="4" cols="50">
             
         </textarea>
     </div>
     <div id="constat">
         <form>
-            <p>Quel est le type d'accident rencontré?</p>
-            <select>
-                <option value=""></option>
-            </select>
-            <p>Facteur de l'accident?</p>
-            
+            <h2>formulaire de constat</h2>
+            <h3>... par rapport à l'incident</h3>
+            <div id="condition" class="form">
+                <p>Quelles ont été les conditions de la route?</p>
+                <select id="select-condition">
+                    <option value="null">----------</option>
+                    <option value="accident">Il y a eu un accident</option>
+                    <option value="ralentissement">Il y a eu un ralentissement</option>
+                    <option value="bouchon">Il y a eu un bouchon</option>
+                    <option value="trafic-fluide">Le trafic était fluide</option>
+                </select>
+            </div>
+            <div id="accident" class="form">
+                <p>Quel est le type d'accident rencontré?</p>
+                <select id="select-accident">
+                    <option value="null">----------</option>
+                    <option value="collision1">Collision d'un véhicule</option>
+                    <option value="collision2">Collision de plusieurs véhicules</option>
+                </select>
+            </div>
+            <div id="qualite" class="form">
+                <p>Comment définierez-vous la qualité de la voirie?</p>
+                <select>
+                    <option value="null">----------</option>
+                    <option value="travaux">Il y a eu des travaux</option>
+                    <option value="luminosite-reduite">La luminosité était réduite</option>
+                    <option value="zone-danger">La zone de route est marquée par un panneau danger</option>
+                    <option value="ralentisseurs">Il y a eu des ralentisseurs de vitesse</option>
+                </select>
+            </div>
+            <div id="facteur" class="form">
+                <p>Facteur de l'accident?</p>
+                <select>
+                    <option value="null">----------</option>
+                    <option value="alcool">L'alcool au volant</option>
+                    <option value="vitesse">La vitesse</option>
+                    <option value="telephone">Téléphone au volant</option>
+                    <option value="fatigue">La fatigue</option>
+                    <option value="presence">Présence d'animaux ou personnes sur la voirie</option>
+                </select>
+            </div>
+            <h3 id="vehicule">... par rapport au véhicule de l'utilisateur</h3>
+            <div id="portes" class="form">
+                <p>Quel est le nombre de portes?</p>
+                <select>
+                    <option value="null">----------</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8+">8 ou plus</option>
+                </select>
+            </div>
+            <div id="puissance" class="form">
+                <p>Quelle est la puissance du moteur?</p>
+                <select>
+                    <option value="null">----------</option>
+                    <option value="-100">Moins de 100 cv</option>
+                    <option value="100-150">100 à 150 cv</option>
+                    <option value="150-200">150 à 200 cv</option>
+                    <option value="200-250">200 à 250 cv</option>
+                    <option value="+250">250 cv ou plus</option>
+                </select>
+            </div>
+            <div id="e1" class="form">
+                <p>Qu'est-ce qui a 4 portes, 4 roues et dégage une puissance d'une centaine de chevaux?</p>
+                <input type="text" name="e1">
+                <input type="submit">
+            </div>
+
         </form>
     </div>
 </body>
