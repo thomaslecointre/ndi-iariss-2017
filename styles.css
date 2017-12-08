@@ -51,7 +51,7 @@ p {
 }
 
 #constat {
-    width: 80%;
+    width: 85%;
     margin: auto;
 }
 
@@ -89,4 +89,11 @@ p {
 #e1 div {
     text-align: center;
     margin-bottom: 10px;
+}
+
+#lancement-pedagogie {
+    background-color: #EF5350;
+    padding: 20px;
+    text-align: center;
+    color: black;
 }
