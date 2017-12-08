@@ -1,5 +1,7 @@
 # Team IARISS pour la Nuit De l'Info
 
+Le site est disponible à http://54.36.54.15/ndi/
+
 L'équipe est composée de :
 * Thomas Lecointre
 * Thomas Perles
