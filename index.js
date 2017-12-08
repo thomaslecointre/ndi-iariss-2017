@@ -64,5 +64,14 @@ $(document).ready(function () {
             e1.show();
             e1 = null;
         }
-    })
+    });
+
+    let e1Text = $(input[name="e1"]);
+    
+    $("#envoyer").click(function() {
+        if(e1Text.val().toLowerCase().contains("voiture")) {
+            $("#lancement-pedagogie").show();
+        }
+    });
+
 })
