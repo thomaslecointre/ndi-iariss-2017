@@ -24,4 +24,8 @@
 }
 #pedagogie_reponse1:hover, #pedagogie_reponse2:hover, #pedagogie_reponse3:hover, #pedagogie_reponse4:hover {
     color:#204D9B;
+    cursor: pointer;
+}
+#pedagogie_reponsebonne {
+    font-size: 300%;
 }
