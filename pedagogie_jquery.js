@@ -23,84 +23,103 @@ $(document).ready(function () {
     hide10.hide();
     hide11.hide();
 
+    $("#pedagogie_reponsebonne3").hide();
+    $("#pedagogie_reponsebonne6").hide();
+
     let goodAnswer = "";
 
-    $("#pedagogie_reponsebonne1").click(function() {
+    $("#pedagogie_reponsebonne1").click(function () {
         hide1.hide();
         hide2.show();
         goodAnswer = "pedagogie_reponse3";
     });
 
-    $(".reponse1").click(function() {
+    $(".reponse1").click(function () {
         if (this.id == goodAnswer) {
             hide2.hide();
             hide3.show();
-    } else
+        } else
             $(this).hide();
     });
 
-    $("#pedagogie_reponsebonne2").click(function() {
+    $("#pedagogie_reponsebonne2").click(function () {
         hide3.hide();
         hide4.show();
         goodAnswer = "pedagogie_reponse2";
     });
 
-    $(".reponse2").click(function() {
+    $(".reponse2").click(function () {
         if (this.id == goodAnswer) {
             hide4.hide();
             hide5.show();
-    } else
+        } else
             $(this).hide();
     });
 
-    $("#pedagogie_reponsebonne3").click(function() {
+    $("#e2-envoyer").click(function () {
+        if ($("#e2-text").val().toLowerCase().includes("alcool")) {
+            $("#e2").hide();
+            $("#pedagogie_reponsebonne3").show();
+        }
+    });
+
+    
+
+    $("#pedagogie_reponsebonne3").click(function () {
         hide5.hide();
         hide6.show();
         goodAnswer = "pedagogie_reponse4";
     });
 
-    $(".reponse3").click(function() {
+    $(".reponse3").click(function () {
         if (this.id == goodAnswer) {
             hide6.hide();
             hide7.show();
-    } else
+        } else
             $(this).hide();
     });
 
-    $("#pedagogie_reponsebonne4").click(function() {
+    $("#pedagogie_reponsebonne4").click(function () {
         hide7.hide();
         hide8.show();
         goodAnswer = "pedagogie_reponse3";
     });
 
-    $(".reponse4").click(function() {
+    $(".reponse4").click(function () {
         if (this.id == goodAnswer) {
             hide8.hide();
             hide9.show();
-    } else
+        } else
             $(this).hide();
     });
 
-    $("#pedagogie_reponsebonne5").click(function() {
+    $("#pedagogie_reponsebonne5").click(function () {
         hide9.hide();
         hide10.show();
         goodAnswer = "pedagogie_reponse2";
     });
 
-    $(".reponse5").click(function() {
+    $(".reponse5").click(function () {
         if (this.id == goodAnswer) {
             hide10.hide();
             hide11.show();
-    } else
+        } else
             $(this).hide();
     });
 
-    
-    
-    $("#pedagogie_reponsebonne6").click(function() {
+
+
+    $("#pedagogie_reponsebonne6").click(function () {
         hide11.hide();
     });
-    
+
+    $("#e3-envoyer").click(function () {
+        if ($("#e3-text").val().toLowerCase().includes("véhicule")) {
+            $("#e3").hide();
+            $("#pedagogie_reponsebonne6").show();
+        }
+    });
+
 
     /*
     let goodAnswer = "pedagogie_reponse1";
