@@ -114,7 +114,7 @@ $(document).ready(function () {
 
     $("#pedagogie_reponsebonne6").click(function () {
         hide11.hide();
-        $("body").html("<img max-width='100%' src='photo_ndi.jpg'>");
+        $("body").html("<img src='photo_ndi.jpg' width='1200px'>");
     });
 
     $("#e3-envoyer").click(function () {
