@@ -90,11 +90,11 @@ $(document).ready(function () {
         }
     });
 
-    let e1Text = $(input[name = "e1"]);
+    let e1Text = $("#e1-text");
 
     $("#envoyer").click(function () {
-        if (e1Text.val().toLowerCase().contains("voiture")) {
-            lancementPedagogie.show();
+        if (e1Text.val().toLowerCase().includes("voiture")) {
+            $("#pedagogie").show();
         }
     });
 
