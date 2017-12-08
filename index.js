@@ -29,9 +29,40 @@ $(document).ready(function () {
     let selectAccident = $("#select-accident");
 
     selectAccident.change(function () {
-        if(selectAccident.val() != "null") {
+        if (selectAccident.val() != "null") {
             qualite.show();
             qualite = null;
+        }
+    });
+
+    let selectQualite = $("#select-qualite");
+
+    selectQualite.change(function () {
+        if (selectQualite.val() != "null") {
+            facteur.show();
+            facteur = null;
+        }
+    });
+
+    let selectFacteur = $("#select-facteur");
+
+    selectFacteur.change(function() {
+        if(selectFacteur.val() == "vitesse") {
+            vehicule.show();
+            vehicule = null;
+            portes.show();
+            portes = null;
+            puissance.show();
+            puissance = null;
+        }
+    });
+
+    let selectPortes = $("#select-portes");
+
+    selectPortes.change(function() {
+        if(selectPortes.val() == "4") {
+            e1.show();
+            e1 = null;
         }
     })
 })

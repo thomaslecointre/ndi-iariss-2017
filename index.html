@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="jquery-3.2.1.slim.min.js"></script>
-    <script src="index.js"></script>
+    <!--<script src="index.js"></script>-->
     <title>ndi-iariss-2017</title>
 </head>
 
@@ -17,14 +17,17 @@
             Nuit de l'Info 2017
         </h1>
     </div>
-    <div id="resume">
-        <h2>résumé de l'incident</h2>
-        <textarea rows="4" cols="50">
-            
-        </textarea>
+    <div id="resume-fond">
+        <div id="resume">
+            <h2>résumé de l'incident</h2>
+            <div>
+                <textarea rows="4" cols="50">
+                </textarea>
+            </div>
+        </div>
     </div>
-    <div id="constat">
-        <form>
+    <div id="constat-fond">
+        <div id="constat">
             <h2>formulaire de constat</h2>
             <h3>... par rapport à l'incident</h3>
             <div id="condition" class="form">
@@ -47,7 +50,7 @@
             </div>
             <div id="qualite" class="form">
                 <p>Comment définierez-vous la qualité de la voirie?</p>
-                <select>
+                <select id="select-qualite">
                     <option value="null">----------</option>
                     <option value="travaux">Il y a eu des travaux</option>
                     <option value="luminosite-reduite">La luminosité était réduite</option>
@@ -57,7 +60,7 @@
             </div>
             <div id="facteur" class="form">
                 <p>Facteur de l'accident?</p>
-                <select>
+                <select id="select-facteur">
                     <option value="null">----------</option>
                     <option value="alcool">L'alcool au volant</option>
                     <option value="vitesse">La vitesse</option>
@@ -69,7 +72,7 @@
             <h3 id="vehicule">... par rapport au véhicule de l'utilisateur</h3>
             <div id="portes" class="form">
                 <p>Quel est le nombre de portes?</p>
-                <select>
+                <select id="select-portes">
                     <option value="null">----------</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -92,13 +95,16 @@
                     <option value="+250">250 cv ou plus</option>
                 </select>
             </div>
-            <div id="e1" class="form">
-                <p>Qu'est-ce qui a 4 portes, 4 roues et dégage une puissance d'une centaine de chevaux?</p>
-                <input type="text" name="e1">
-                <input type="submit">
-            </div>
-
-        </form>
+        </div>
+    </div>
+    <div id="e1">
+        <div>Qu'est-ce qui a 4 portes, 4 roues et dégage une puissance d'une centaine de chevaux?</div>
+        <div>
+            <input type="text" name="e1">
+        </div>
+        <div>
+            <button>Envoyer</button>
+        </div>
     </div>
 </body>
 

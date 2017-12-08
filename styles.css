@@ -1,8 +1,14 @@
 body {
     margin: auto;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
     color: #EFEBE9;
     /* max-width: 1200px; */
+}
+
+button, textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
 
 h1 {
@@ -24,19 +30,35 @@ p {
     margin: 0;
 }
 
-#resume {
+#resume-fond {
     background-color: #1A237E;
     padding: 20px;
 }
 
-#constat {
+#resume {
+    width: 80%;
+    margin: auto;
+}
+
+#resume div {
+    margin: auto;
+    text-align: center;
+}
+
+#constat-fond {
     background-color: #3949AB;
     padding: 20px;
+}
+
+#constat {
+    width: 80%;
+    margin: auto;
 }
 
 .form {
     margin: 5px auto 5px auto;
     width: 75%;
+    padding: 0;
 }
 
 .form p,
@@ -57,4 +79,14 @@ p {
 .form input {
     display: inline-block;
     margin: 0;
+}
+
+#e1 {
+    background-color: #1A237E;
+    padding: 10px;
+}
+
+#e1 div {
+    text-align: center;
+    margin-bottom: 10px;
 }
