@@ -1,43 +1,191 @@
 <!doctype html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="styles_pedagogie.css">
-        <title>pedagogie</title>
-    </head>
-    
-    <body>
-        <header></header>
-        
-        <section id="contenu">
-            <div id="pedagogie">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles_pedagogie.css">
+    <script src="jquery-3.2.1.slim.min.js"></script>
+    <script src="pedagogie_jquery.js"></script>
+    <title>pedagogie</title>
+</head>
+
+<body>
+    <header></header>
+
+    <section id="contenu">
+        <div id="pedagogie">
+            <div id="hide1">
+                <div id="pedagogie_reponsebonne1">
+                    Cliquez ici pour commencer !
+                </div>
+            </div>
+
+            <div id="hide2">
                 <div id="pedagogie_image">
-                    <p><img src="img/pedagogie1.jpg" title="image pour illustrer la pédagogie" alt="image pour illustrer la pédagogie"/></p>
+                    <p>
+                        <img src="img/pedagogie1.jpg" title="image pour illustrer la pédagogie" alt="image pour illustrer la pédagogie" />
+                    </p>
                 </div>
-                <div id="pedagogie_question">
-                    Question : Quelle est la solution à tout ?
-                </div>
+                <div id="pedagogie_question">Question : "Lors d'une balade dominicale, vous vous retrouvez dans cette situation :"</div>
                 <div id="pedagogie_reponses">
                     <div id="pedagogie_reponse_gauche">
-                        <div id="pedagogie_reponse1">
-                            Réponse 1 : Je ne sais pas
-                        </div>
-                        <div id="pedagogie_reponse2">
-                            Réponse 2 : Oui
-                        </div>
+                        <div class="reponse1" id="pedagogie_reponse1">Réponse 1 : "J'attends de croiser une autre voiture pour voir si c'est normal."</div>
+                        <div class="reponse1" id="pedagogie_reponse2">Réponse 2 : "J'active mes essuie-glaces au plus vite."</div>
                     </div>
                     <div id="pedagogie_reponse_droite">
-                        <div id="pedagogie_reponse3">
-                            Réponse 3 : 42
-                        </div>
-                        <div id="pedagogie_reponse4">
-                            Réponse 4 : Question suivante
-                        </div>
+                        <div class="reponse1" id="pedagogie_reponse3">Réponse 3 : "Aucun panneau n'indiquait un risque d'aquaplanning, je reste relax."</div>
+                        <div class="reponse1" id="pedagogie_reponse4">Réponse 4 : "Je file chez le carrossier car l'eau de mer attaque la peinture."</div>
                     </div>
                 </div>
             </div>
-        </section>
-        
-        <footer></footer>
-    </body>
+
+            <div id="hide3">
+                <div id="pedagogie_image">
+                    <p>
+                        <img src="img/pedagogie1.jpg" title="image pour illustrer la pédagogie" alt="image pour illustrer la pédagogie" />
+                    </p>
+                </div>
+                <div id="pedagogie_question">Question : "Lors d'une balade dominicale, vous vous retrouvez dans cette situation :"</div>
+                <div id="pedagogie_reponses">
+                    <div id="pedagogie_reponsebonne2">"Aucun panneau n'indiquait un risque d'aquaplanning, je reste relax."
+                        <br/>Cliquez ici pour continuer</div>
+                </div>
+            </div>
+
+            <div id="hide4">
+                <div id="pedagogie_image">
+                    <p>
+                        <img src="img/pedagogie2.jpg" title="image pour illustrer la pédagogie" alt="image pour illustrer la pédagogie" />
+                    </p>
+                </div>
+                <div id="pedagogie_question">Question : "Je viens de doubler un tank et un homme tente de sauter sur ma voiture :"</div>
+                <div id="pedagogie_reponses">
+                    <div id="pedagogie_reponse_gauche">
+                        <div class="reponse2" id="pedagogie_reponse1">Réponse 1 : "Je mets mon clignotant et me rabats dans le plus grand calme."</div>
+                        <div class="reponse2" id="pedagogie_reponse2">Réponse 2 : "Je klaxonne."</div>
+                    </div>
+                    <div id="pedagogie_reponse_droite">
+                        <div class="reponse2" id="pedagogie_reponse3">Réponse 3 : "J'active mes feux de brouillard arrière."</div>
+                        <div class="reponse2" id="pedagogie_reponse4">Réponse 4 : "Je freine sec pour que l'homme me dépasse et s'écrase."</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hide5">
+                <div id="pedagogie_image">
+                    <p>
+                        <img src="img/pedagogie2.jpg" title="image pour illustrer la pédagogie" alt="image pour illustrer la pédagogie" />
+                    </p>
+                </div>
+                <div id="pedagogie_question">Question : "Je viens de doubler un tank et un homme tente de sauter sur ma voiture :"</div>
+                <div id="pedagogie_reponses">
+                    <div id="pedagogie_reponsebonne3">"Je klaxonne."
+                        <br/>Cliquez ici pour continuer</div>
+                </div>
+            </div>
+
+            <div id="hide6">
+                <div id="pedagogie_image">
+                    <p>
+                        <img src="img/pedagogie3.jpg" title="image pour illustrer la pédagogie" alt="image pour illustrer la pédagogie" />
+                    </p>
+                </div>
+                <div id="pedagogie_question">Question : "Je suis sur l'autoroute. Un autostoppeur se présente sur le bas côté :"</div>
+                <div id="pedagogie_reponses">
+                    <div id="pedagogie_reponse_gauche">
+                        <div class="reponse3" id="pedagogie_reponse1">Réponse 1 : "J'ouvre la portière droite afin de le moucher."</div>
+                        <div class="reponse3" id="pedagogie_reponse2">Réponse 2 : "Je l'écrase de plein fouet en mettant les essuie-glaces."</div>
+                    </div>
+                    <div id="pedagogie_reponse_droite">
+                        <div class="reponse3" id="pedagogie_reponse3">Réponse 3 : "Je le prends en stop pour mieux le jeter à 130 km/h."</div>
+                        <div class="reponse3" id="pedagogie_reponse4">Réponse 4 : "Je klaxonne."</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hide7">
+                <div id="pedagogie_image">
+                    <p>
+                        <img src="img/pedagogie3.jpg" title="image pour illustrer la pédagogie" alt="image pour illustrer la pédagogie" />
+                    </p>
+                </div>
+                <div id="pedagogie_question">Question : "Je suis sur l'autoroute. Un autostoppeur se présente sur le bas côté :"</div>
+                <div id="pedagogie_reponses">
+                    <div id="pedagogie_reponsebonne4">"Je klaxonne."
+                        <br/>Cliquez ici pour continuer</div>
+                </div>
+            </div>
+
+            <div id="hide8">
+                <div id="pedagogie_image">
+                    <p>
+                        <img src="img/pedagogie4.jpg" title="image pour illustrer la pédagogie" alt="image pour illustrer la pédagogie" />
+                    </p>
+                </div>
+                <div id="pedagogie_question">Question : "Un agent de la force publique me fait signe de m'arrêter :"</div>
+                <div id="pedagogie_reponses">
+                    <div id="pedagogie_reponse_gauche">
+                        <div class="reponse4" id="pedagogie_reponse1">Réponse 1 : "Je roule trop vite pour m'arrêter sur une distance raisonnable."</div>
+                        <div class="reponse4" id="pedagogie_reponse2">Réponse 2 : "J'écrase l'agent. Personne n'arrête Sergio."</div>
+                    </div>
+                    <div id="pedagogie_reponse_droite">
+                        <div class="reponse4" id="pedagogie_reponse3">Réponse 3 : "Je klaxonne."</div>
+                        <div class="reponse4" id="pedagogie_reponse4">Réponse 4 : "Je m'arrête afin de connaître mon record de vitesse."</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hide9">
+                <div id="pedagogie_image">
+                    <p>
+                        <img src="img/pedagogie4.jpg" title="image pour illustrer la pédagogie" alt="image pour illustrer la pédagogie" />
+                    </p>
+                </div>
+                <div id="pedagogie_question">Question : "Un agent de la force publique me fait signe de m'arrêter :"</div>
+                <div id="pedagogie_reponses">
+                    <div id="pedagogie_reponsebonne5">"Je klaxonne."
+                        <br/>Cliquez ici pour continuer</div>
+                </div>
+            </div>
+
+            <div id="hide10">
+                <div id="pedagogie_image">
+                    <p>
+                        <img src="img/pedagogie5.jpg" title="image pour illustrer la pédagogie" alt="image pour illustrer la pédagogie" />
+                    </p>
+                </div>
+                <div id="pedagogie_question">Question : "Dans cette situation, je dois :"</div>
+                <div id="pedagogie_reponses">
+                    <div id="pedagogie_reponse_gauche">
+                        <div class="reponse5" id="pedagogie_reponse1">Réponse 1 : "Garder mon sang-froid et ne pas chercher à contredire cet ami motard."</div>
+                        <div class="reponse5" id="pedagogie_reponse2">Réponse 2 : "Signaler à ce preux chevalier que son destrier est très bruyant et qu'il aurait tendance
+                            à faire de l'huile."</div>
+                    </div>
+                    <div id="pedagogie_reponse_droite">
+                        <div class="reponse5" id="pedagogie_reponse3">Réponse 3 : "Saluer ce motard comme il le fait si gentiment."</div>
+                        <div class="reponse5" id="pedagogie_reponse4">Réponse 4 : "Faire demi-tour et suivre ce motard. Il doit connapitre un bon bar dans le coin pour
+                            se torcher la gueule et se déguiser de la sorte."</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hide11">
+                <div id="pedagogie_image">
+                    <p>
+                        <img src="img/pedagogie5.jpg" title="image pour illustrer la pédagogie" alt="image pour illustrer la pédagogie" />
+                    </p>
+                </div>
+                <div id="pedagogie_question">Question : "Dans cette situation, je dois :"</div>
+                <div id="pedagogie_reponses">
+                    <div id="pedagogie_reponsebonne6">"Signaler à ce preux chevalier que son destrier est très bruyant et qu'il aurait tendance à faire de
+                        l'huile."
+                        <br/>Cliquez ici pour continuer</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer></footer>
+</body>
+
 </html>
