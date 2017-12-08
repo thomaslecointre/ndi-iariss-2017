@@ -15,12 +15,12 @@
 #pedagogie_reponse_gauche {
     text-align:right;
     float:left;
-    margin-left:35%;
+    margin-left:10%;
 }
 #pedagogie_reponse_droite {
     text-align:left;
     float:right;
-    margin-right:35%;
+    margin-right:10%;
 }
 #pedagogie_reponse1:hover, #pedagogie_reponse2:hover, #pedagogie_reponse3:hover, #pedagogie_reponse4:hover {
     color:#204D9B;
